@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('img/fondo_telas.jpg'); /* Asegúrate de que la ruta de la imagen sea correcta */
+    background-size: cover; /* Ajusta la imagen para que cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+.login-container {
+    display: flex;
+    background-color: rgba(34, 34, 34, 0.8); /* Fondo mate oscuro */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+    max-width: 800px; /* Ancho máximo */
+    width: 90%; /* Ancho adaptativo */
+}
+
+.logo-container {
+    flex: 1; /* Ocupa la mitad del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 150px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
+}
+
+.login-form {
+    flex: 1; /* Ocupa la mitad del contenedor */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center; /* Centra el título */
+    color: white; /* Texto en blanco */
+}
+
+.form-label {
+    margin-bottom: 5px; /* Espacio debajo de las etiquetas */
+    color: white; /* Texto en blanco */
+}
+
+.form-input {
+    padding: 10px;
+    margin-bottom: 15px; /* Espacio entre los campos */
+    border: 1px solid #444; /* Borde oscuro */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #333; /* Fondo de entrada */
+    color: #fff; /* Texto en blanco */
+}
+
+.form-input::placeholder {
+    color: #bbb; /* Color de los placeholders */
+}
+
+.form-button {
+    padding: 10px;
+    border: none; /* Sin borde */
+    background-color: #444; /* Color del botón */
+    color: #fff; /* Texto blanco */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición de color */
+}
+
+.form-button:hover {
+    background-color: #555; /* Color del botón al pasar el mouse */
+}
+
+

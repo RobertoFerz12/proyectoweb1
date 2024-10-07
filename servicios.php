@@ -176,26 +176,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['finalizar'])) {
         }
 
         function previousStep(step) {
-            if (step === 2) {
+            if (step === 1) {
                 document.getElementById('step2').style.display = 'none';
                 document.getElementById('form1').style.display = 'block';
-            } else if (step === 3) {
+            } else if (step === 2) {
                 document.getElementById('step3').style.display = 'none';
                 document.getElementById('step2').style.display = 'block';
+            } else if (step === 3) {
+                document.getElementById('resultado').style.display = 'none';
+                document.getElementById('step3').style.display = 'block';
             }
         }
 
         function salir() {
-            // Aquí puedes implementar la lógica para salir o redirigir a otra página
-            window.location.href = 'index.php'; // Ejemplo: redirigir a la página de inicio
+            window.location.href = 'index.php';
         }
     </script>
 </section>
 
-<?php include 'footer.php'; ?>
-
-
-
+<?php
+include 'footer.php';
+?>
 
 
 

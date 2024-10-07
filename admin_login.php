@@ -15,10 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($result->num_rows > 0) {
         $user = $result->fetch_assoc();
-        // Mensajes de depuración
-        echo "Correo encontrado: " . $user['email'] . "<br>";
-        echo "Contraseña ingresada: " . $password . "<br>";
-        echo "Contraseña almacenada: " . $user['password'] . "<br>";
         
         // Compara directamente la contraseña almacenada
         if ($password === $user['password']) {
@@ -36,10 +32,35 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-<form method="post" action="">
-    <label for="email">Correo Electrónico:</label>
-    <input type="email" name="email" required>
-    <label for="password">Contraseña:</label>
-    <input type="password" name="password" required>
-    <button type="submit">Iniciar Sesión</button>
-</form>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin_login.css"> <!-- Asegúrate de que el nombre del archivo CSS sea correcto -->
+</head>
+<body>
+
+<div class="login-container">
+    <div class="logo-container">
+        <img src="img/logo.jpeg" alt="Logo de la Empresa"> <!-- Ajusta la ruta del logo -->
+    </div>
+    <div class="login-form">
+        <h2>Iniciar Sesión</h2>
+        <form method="post" action="">
+            <label class="form-label" for="email">Correo Electrónico:</label>
+            <input class="form-input" type="email" name="email" required placeholder="Tu correo">
+            
+            <label class="form-label" for="password">Contraseña:</label>
+            <input class="form-input" type="password" name="password" required placeholder="Tu contraseña">
+            
+            <button class="form-button" type="submit">Iniciar Sesión</button>
+        </form>
+        <p style="text-align: center; color: white;">¡Bienvenido! Inicia sesión para continuar.</p>
+    </div>
+</div>
+
+</body>
+</html>
