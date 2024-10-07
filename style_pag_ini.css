@@ -1,0 +1,94 @@
+/* Estilos generales para la página de inicio */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Color de fondo suave */
+    margin: 0;
+    padding: 0;
+}
+
+#inicio {
+    text-align: center; /* Centra el contenido */
+    padding: 40px; /* Espaciado superior e inferior */
+}
+
+h1 {
+    color: #6b4f4f; /* Color del título principal */
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em; /* Tamaño de fuente para párrafos */
+    color: #555; /* Color de texto más claro */
+    margin-bottom: 40px;
+}
+
+/* Estilos para los servicios destacados */
+.servicios-destacados {
+    display: flex; /* Flexbox para alinear los servicios */
+    justify-content: center; /* Centra los elementos en el contenedor */
+    margin-bottom: 40px; /* Espacio inferior */
+}
+
+.servicio {
+    background-color: #fff; /* Fondo blanco para cada servicio */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 0 15px; /* Espaciado entre servicios */
+    padding: 20px; /* Espaciado interno */
+    width: 200px; /* Ancho fijo para cada servicio */
+    text-align: left; /* Alineación a la izquierda */
+}
+
+.servicio i {
+    font-size: 2em; /* Tamaño de icono grande */
+    color: #6b4f4f; /* Color del icono */
+    margin-bottom: 10px; /* Espacio inferior del icono */
+}
+
+h3 {
+    color: #6b4f4f; /* Color del título de servicio */
+    font-size: 1.5em; /* Tamaño de fuente */
+    margin-bottom: 10px;
+}
+
+/* Estilos para la llamada a la acción */
+.cta {
+    background-color: #d2b7a3; /* Fondo de llamada a la acción */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.cta h2 {
+    color: #6b4f4f; /* Color del título de llamada a la acción */
+}
+
+.cta p {
+    font-size: 1.2em; /* Tamaño de fuente */
+}
+
+.btn {
+    display: inline-block; /* Mostrar como un bloque en línea */
+    background-color: #6b4f4f; /* Color de fondo del botón */
+    color: #fff; /* Color de texto blanco */
+    padding: 10px 20px; /* Espaciado del botón */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.btn:hover {
+    background-color: #4b3c33; /* Color más oscuro al pasar el ratón */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .servicios-destacados {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+
+    .servicio {
+        width: auto; /* Ancho automático en pantallas pequeñas */
+        margin: 10px 0; /* Espacio vertical */
+    }
+}
+    

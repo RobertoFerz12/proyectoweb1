@@ -1,9 +1,15 @@
+/* =========================
+   Estilos Generales
+========================= */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* =========================
+   Estilos del Menú
+========================= */
 .menu {
     background-color: #333;
     overflow: hidden;
@@ -30,6 +36,161 @@ body {
     color: black;
 }
 
+/* =========================
+   Estilos para Secciones
+========================= */
 section {
     padding: 20px;
+}
+
+/* =========================
+   Estilos para Imágenes Circulares
+========================= */
+.imagen-circulo {
+    width: 100px; /* Cambia este valor según lo necesites */
+    height: 100px; /* Asegúrate de que el alto sea igual al ancho */
+    border-radius: 50%; /* Esto convierte la imagen en un círculo */
+    object-fit: cover; /* Asegura que la imagen se ajuste correctamente dentro del círculo */
+    margin-right: 10px; /* Espaciado a la derecha del círculo */
+}
+
+/* =========================
+   Estilos para Formularios
+========================= */
+form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+form {
+    width: 100%;
+    /* max-width: 600px; */
+    margin: 0 auto;
+    /* border: 1px red solid; */
+    width: 100%;
+}
+
+
+/* =========================
+   Media Queries
+========================= */
+@media (max-width: 768px) {
+    .imagen-circulo {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* =========================
+   Estilos para Títulos y Párrafos
+========================= */
+h2 {
+    color: #4b3c33; /* Color del título */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #333; /* Color de texto */
+    margin-bottom: 20px;
+}
+
+/* =========================
+   Estilos para Información de Contacto
+========================= */
+.contact-info {
+    background-color: #e3d4c7; /* Color de fondo más oscuro para la información de contacto */
+    padding: 15px;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.contact-info h3 {
+    color: #4b3c33; /* Color del subtítulo */
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    list-style-type: none; /* Quitar viñetas */
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 10px 0;
+    font-size: 1.1em; /* Tamaño de fuente */
+    color: #4b3c33; /* Color del texto */
+}
+
+.contact-info li a {
+    color: #4b3c33; /* Color de los enlaces */
+    text-decoration: underline; /* Subrayar enlaces */
+}
+
+.contact-info li a:hover {
+    color: #a0522d; /* Color de enlace al pasar el mouse */
+}
+
+.contact-info i {
+    margin-right: 10px; /* Espaciado a la derecha del ícono */
+}
+
+/* =========================
+   Estilos para la Sección de Contacto
+========================= */
+#contacto {
+    background-color: #f9f9f9; /* Color de fondo claro */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/*========================
+estilo datos*/
+/* CSS general para la sección de Datos */
+
+#datos {
+    background-color: #f0eae3; /* Color de fondo suave */
+    padding: 30px; /* Espaciado interior */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 20px auto; /* Margen automático para centrar */
+    max-width: 800px; /* Ancho máximo */
+}
+
+/* Título principal de la sección */
+#datos h2 {
+    color: #4b3c33; /* Color oscuro para el título */
+    font-size: 2.5em; /* Tamaño del título */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilos para los párrafos */
+#datos p {
+    font-size: 1.1em; /* Tamaño de fuente */
+    color: #333; /* Color de texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilo para los subtítulos */
+#datos h3 {
+    color: #a0522d; /* Color marrón claro para subtítulos */
+    margin-top: 20px; /* Margen superior */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilos para las citas de clientes */
+blockquote {
+    background-color: #e3d4c7; /* Fondo claro para las citas */
+    border-left: 5px solid #a0522d; /* Línea a la izquierda */
+    padding: 10px 15px; /* Espaciado interior */
+    font-style: italic; /* Estilo cursivo */
+    color: #4b3c33; /* Color del texto de la cita */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+/* Estilos para las palabras destacadas */
+strong {
+    color: #a0522d; /* Color marrón claro para el texto en negrita */
 }
