@@ -76,4 +76,20 @@ h2 {
     background-color: #555; /* Color del botón al pasar el mouse */
 }
 
+.create-account {
+    background-color: #555; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    margin-top: 15px;
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar por el botón */
+    transition: background-color 0.3s ease; /* Transición suave */
+    display: inline-block; /* Asegura que se muestre correctamente en línea */
+}
+
+.create-account:hover {
+    background-color: #333; /* Cambio de color al pasar el ratón */
+}
 

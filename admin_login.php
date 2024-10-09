@@ -15,9 +15,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($result->num_rows > 0) {
         $user = $result->fetch_assoc();
-        
-        // Compara directamente la contraseña almacenada
-        if ($password === $user['password']) {
+
+        // Verificar la contraseña usando password_verify()
+        if (password_verify($password, $user['password'])) {
             $_SESSION['admin_logged'] = true;
             header("Location: admin_panel.php");
             exit();
@@ -30,8 +30,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $stmt->close();
 }
-?>
 
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -59,8 +59,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <button class="form-button" type="submit">Iniciar Sesión</button>
         </form>
         <p style="text-align: center; color: white;">¡Bienvenido! Inicia sesión para continuar.</p>
+        <!-- Botón para crear cuenta -->
+        <div style="text-align: center;">
+            <a href="crear_cuenta.php" class="form-button create-account">Crear Cuenta</a>
+        </div>
     </div>
 </div>
 
 </body>
 </html>
+
