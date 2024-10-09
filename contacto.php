@@ -12,9 +12,9 @@ include 'menu.php'; // Incluir el menú
         <h3>Información de Contacto</h3>
         <ul>
             <li><i class="fas fa-phone-alt"></i> Teléfono: 123-456-7890</li>
-            <li><i class="fas fa-envelope"></i> Email: info@tapiceriaficticia.com</li>
-            <li><i class="fab fa-facebook"></i> Facebook: <a href="https://facebook.com/tapiceriaficticia" target="_blank">Tapicería Ficticia</a></li>
-            <li><i class="fab fa-instagram"></i> Instagram: <a href="https://instagram.com/tapiceriaficticia" target="_blank">@tapiceriaficticia</a></li>
+            <li><i class="fas fa-envelope"></i> Email: info@tapiceriamagañas.com</li>
+            <li><i class="fab fa-facebook"></i> Facebook: <a href="https://facebook.com/tapiceriamagañas" target="_blank">Tapicería Magañas</a></li>
+            <li><i class="fab fa-instagram"></i> Instagram: <a href="https://instagram.com/tapiceriamagañas" target="_blank">@tapiceriamagañas</a></li>
         </ul>
     </div>
 </section>

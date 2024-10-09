@@ -9,7 +9,7 @@ include 'menu.php'; // Incluir el menú
 
 
 <section id="inicio">
-    <h1>Bienvenido a Tapicería Ficticia</h1>
+    <h1>Bienvenido a Tapicería Magañas</h1>
     <p>Transformamos tus espacios con estilo y confort. Descubre nuestros servicios y productos personalizados.</p>
     
     <div class="servicios-destacados">

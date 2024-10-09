@@ -6,7 +6,7 @@ include 'menu.php'; // Incluir el menú
 
 <section id="datos">
     <h2>Conoce Más Sobre Nosotros</h2>
-    <p>En <strong>Tapicería Ficticia</strong>, nos enorgullecemos de ofrecer servicios de tapicería excepcionales desde <strong>2005</strong>. Nuestro compromiso es transformar tus muebles y espacios con un toque de elegancia y calidad.</p>
+    <p>En <strong>Tapicería Magañas</strong>, nos enorgullecemos de ofrecer servicios de tapicería excepcionales desde <strong>2005</strong>. Nuestro compromiso es transformar tus muebles y espacios con un toque de elegancia y calidad.</p>
     
     <h3>Nuestra Misión</h3>
     <p>Nuestra misión es proporcionar soluciones de tapicería que no solo satisfagan, sino que superen las expectativas de nuestros clientes, garantizando la satisfacción total en cada proyecto.</p>
@@ -19,7 +19,7 @@ include 'menu.php'; // Incluir el menú
     
     <h3>Testimonios de Clientes</h3>
     <blockquote>
-        <p>"La atención al cliente y la calidad del trabajo son excepcionales. Recomendamos Tapicería Ficticia sin dudarlo!" - <em>María López</em></p>
+        <p>"La atención al cliente y la calidad del trabajo son excepcionales. Recomendamos Tapicería Magañas sin dudarlo!" - <em>María López</em></p>
     </blockquote>
 </section>
 
